@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * main - Prints the alphabetic in lower and upper case
  *
- * Return: Always (Success)
+ * Return: 0
  */
 int main(void)
 {
@@ -13,7 +12,11 @@ int main(void)
 	for (c = 'a'; c <= 'z'; c++)
 	{
 		putchar(c);
-		putchar(toupper(c));
+	}
+
+	for (c = 'A'; c <= 'Z'; c++)
+	{
+		putchar(c);
 	}
 
 	putchar('\n');
